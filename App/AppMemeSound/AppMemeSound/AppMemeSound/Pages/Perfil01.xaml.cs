@@ -25,8 +25,9 @@ namespace AppMemeSound.Pages
 
         private void TocasMusica(object sender, EventArgs args)
         {
-
-            CrossMediaManager.Current.Play("https://archive.org/download/BigBuckBunny_328/BigBuckBunny_512kb.mp4", MediaFileType.Video);
+            var player = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
+            player.Load("trolololo.mp3");
+            //CrossMediaManager.Current.Play("trolololo.mp3");
 
         }
     }
