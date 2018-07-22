@@ -1,6 +1,4 @@
 ﻿using AppMemeSound.Help;
-using Plugin.MediaManager;
-using Plugin.MediaManager.Abstractions.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +16,7 @@ namespace AppMemeSound.Pages
         public Perfil01()
         {
             InitializeComponent();
+                       
 
             SOM.Clicked += TocasMusica;
         }
@@ -28,7 +27,7 @@ namespace AppMemeSound.Pages
             var player = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
             player.Load("trolololo.mp3");
             //CrossMediaManager.Current.Play("trolololo.mp3");
-
+            player.Play();
         }
     }
 }

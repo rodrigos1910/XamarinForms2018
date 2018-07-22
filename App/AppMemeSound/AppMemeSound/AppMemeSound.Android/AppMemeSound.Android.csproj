@@ -48,15 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Plugin.MediaManager">
-      <Version>0.4.5</Version>
-    </PackageReference>
-    <PackageReference Include="Plugin.MediaManager.Forms">
-      <Version>0.4.5</Version>
-    </PackageReference>
-    <PackageReference Include="Plugin.MediaManager.Reactive">
-      <Version>0.4.5</Version>
-    </PackageReference>
     <PackageReference Include="Xam.Plugin.SimpleAudioPlayer">
       <Version>1.1.0</Version>
     </PackageReference>
