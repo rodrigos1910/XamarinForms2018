@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMemeSound.Pages.SilvaSystem">
+    <ContentPage.Content>
+        <StackLayout Spacing="0">
+
+            <RelativeLayout VerticalOptions="Start" HeightRequest="300" >
+                <Image Source="fundo.jpg" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" 
+                       Aspect="AspectFill"></Image>
+
+               
+                <Label Text="Xamarim"
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Perfil, Property=X, Factor=1}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Perfil, Property=Y, Factor=1, Constant=180}"
+                       ></Label>
+            </RelativeLayout>
+
+            <Grid HeightRequest="120" BackgroundColor="#0D1F2D">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*">
+
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" ></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Label Text="Xamarim" TextColor="White" FontSize="32"></Label>
+                </StackLayout>
+
+            </Grid>
+            <StackLayout Padding="30" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet elementum pharetra. Nulla facilisi. Fusce interdum blandit risus in semper. Praesent commodo sed orci nec congue. Vivamus eleifend libero quam. In turpis nulla, viverra maximus scelerisque ac, semper id tortor. Mauris pulvinar dapibus augue, id sagittis nulla eleifend non. Nam urna est, dictum non ligula quis, sagittis lacinia quam. Vestibulum eget eleifend velit. Phasellus sed ultricies lectus. Praesent lobortis, dui nec pulvinar sodales, quam libero gravida magna, ut scelerisque erat justo vel nibh. Duis semper dolor velit, ut sagittis erat vulputate vitae. Morbi accumsan a magna ornare imperdiet. Nullam ullamcorper faucibus consequat. Nulla at euismod orci, id gravida lacus."></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

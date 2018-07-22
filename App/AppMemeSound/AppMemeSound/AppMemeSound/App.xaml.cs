@@ -11,7 +11,7 @@ namespace AppMemeSound
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new AppMemeSound.Master.Menu();
 		}
 
 		protected override void OnStart ()
