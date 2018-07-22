@@ -44,8 +44,8 @@
 
             </Grid>
             <StackLayout Padding="30" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet elementum pharetra. Nulla facilisi. Fusce interdum blandit risus in semper. Praesent commodo sed orci nec congue. Vivamus eleifend libero quam. In turpis nulla, viverra maximus scelerisque ac, semper id tortor. Mauris pulvinar dapibus augue, id sagittis nulla eleifend non. Nam urna est, dictum non ligula quis, sagittis lacinia quam. Vestibulum eget eleifend velit. Phasellus sed ultricies lectus. Praesent lobortis, dui nec pulvinar sodales, quam libero gravida magna, ut scelerisque erat justo vel nibh. Duis semper dolor velit, ut sagittis erat vulputate vitae. Morbi accumsan a magna ornare imperdiet. Nullam ullamcorper faucibus consequat. Nulla at euismod orci, id gravida lacus."></Label>
-            </StackLayout>
+                <Button Text="SOM NA CAIXA DJ!!!" x:Name="SOM"></Button>
+             </StackLayout>
             
             
         </StackLayout>

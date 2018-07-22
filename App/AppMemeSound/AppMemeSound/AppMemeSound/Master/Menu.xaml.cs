@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppMemeSound.Help;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,14 +21,16 @@ namespace AppMemeSound.Master
         private void GoPaginaPerfil01(object sender, EventArgs args)
         {
             //Navigation.PushAsync(new Pages.Perfil01());
-            //Detail = new Pages.Perfil01();
-            Detail = new Pages.SilvaSystem();
+            Detail = new Pages.Perfil01();
+            //Detail = new Pages.SilvaSystem();
+           
         }
         private void GoPaginaSilvaSystem(object sender, EventArgs args)
         {
             //Navigation.PushAsync(new Pages.SilvaSystem());
-
-            Detail = new Pages.SilvaSystem();
+            Detail = new Pages.Perfil01();
+            //Detail = new Pages.SilvaSystem();
+         
         }
 
     }
