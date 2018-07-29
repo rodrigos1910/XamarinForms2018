@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMemeSound3.Pages.Page01">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Spacing="0">
+
+            <RelativeLayout VerticalOptions="Start" HeightRequest="300" >
+                <Image Source="fundo.jpg" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" 
+                       Aspect="AspectFill"></Image>
+
+                <Image Source="logo.png" 
+                       x:Name="Perfil"
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.5, Constant=-60}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.2}"
+                       
+                       WidthRequest="120"></Image>
+                <Label Text="SilvaSystem"
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Perfil, Property=X, Factor=1}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Perfil, Property=Y, Factor=1, Constant=180}"
+                       ></Label>
+            </RelativeLayout>
+
+            <Grid HeightRequest="120" BackgroundColor="#0D1F2D">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*">
+
+                    </ColumnDefinition>
+                    <ColumnDefinition  Width="*">
+
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" ></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Label Text="18" TextColor="White" FontSize="32"></Label>
+                    <Label Text="anos" HorizontalTextAlignment="Center" TextColor="White" FontSize="32"></Label>
+                </StackLayout>
+                <StackLayout Grid.Column="1" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Label Text="26/02/1993" TextColor="White" FontSize="32"></Label>
+                    <Label Text="nasceu" HorizontalTextAlignment="Center" TextColor="White" FontSize="32"></Label>
+                </StackLayout>
+
+            </Grid>
+            <StackLayout Padding="30" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Button Text="SOM NA CAIXA DJ!!!" x:Name="SOM"></Button>
+            </StackLayout>
+
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
