@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pag="clr-namespace:AppMemeSound5.Pages"
+             x:Class="AppMemeSound5.Master.Menu">
+
+    <MasterDetailPage.Master>
+        <!--Menu -->
+        <ContentPage Title="Menu" BackgroundColor="#0D1F2D">
+            <StackLayout>
+
+                <StackLayout BackgroundColor="#FFC926" Padding="30">
+                    <Image Source="logo.png" HorizontalOptions="Center" VerticalOptions="Center" />
+                </StackLayout>
+                <ScrollView>
+                    <StackLayout Spacing="20">
+                        <ListView x:Name="Lista" ItemSelected="SelecaoCategoriaAction">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <TextCell Text="{Binding name}" />
+
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+
+
+                        </ListView>
+                        <!--<Button Text="Populares" BackgroundColor="Transparent" FontSize="24" TextColor="#FFFFFF" Clicked="GoPaginaPerfil01"></Button>
+                    <Button Text="Favoritos" BackgroundColor="Transparent" FontSize="24"  TextColor="#FFFFFF" Clicked="GoPaginaSilvaSystem"></Button>
+                    <Button Text="Todos" BackgroundColor="Transparent" FontSize="24"  TextColor="#FFFFFF"></Button>
+                    <Button Text="Músicas" BackgroundColor="Transparent" FontSize="24"  TextColor="#FFFFFF"></Button>
+                    <Button Text="Novelas" BackgroundColor="Transparent" FontSize="24"  TextColor="#FFFFFF"></Button>
+                    <Button Text="Propagandas" BackgroundColor="Transparent" FontSize="24"  TextColor="#FFFFFF"></Button>
+                    <Button Text="Cheves e Chapolim" BackgroundColor="Transparent" FontSize="24"  TextColor="#FFFFFF"></Button>
+                    <Button Text="Esportes" BackgroundColor="Transparent" FontSize="24"  TextColor="#FFFFFF"></Button>
+                    <Button Text="Apresentadores" BackgroundColor="Transparent" FontSize="24"  TextColor="#FFFFFF"></Button>
+                    <Button Text="Virais" BackgroundColor="Transparent" FontSize="24"  TextColor="#FFFFFF"></Button>
+                    <Button Text="Jornais" BackgroundColor="Transparent" FontSize="24"  TextColor="#FFFFFF"></Button>
+                    <Button Text="Desenhos" BackgroundColor="Transparent" FontSize="24"  TextColor="#FFFFFF"></Button>
+                    <Button Text="Outros" BackgroundColor="Transparent" FontSize="24"  TextColor="#FFFFFF"></Button> -->
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <!--Páginas -->
+        <NavigationPage>
+            <x:Arguments>
+                <pag:ListaSom></pag:ListaSom> 
+            </x:Arguments>
+
+        </NavigationPage>
+
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
