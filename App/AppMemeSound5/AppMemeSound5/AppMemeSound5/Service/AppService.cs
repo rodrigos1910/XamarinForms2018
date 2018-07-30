@@ -9,7 +9,7 @@ namespace AppMemeSound5.Service
 {
     public class AppService
     {
-        private static string URL = "https://api.myjson.com/bins/wxwua";
+        private static string URL = "https://api.myjson.com/bins/qpaf6";
 
 
         public static List<Category> GetCategorias()

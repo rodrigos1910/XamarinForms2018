@@ -17,7 +17,7 @@ namespace AppMemeSound5.Master
         {
             InitializeComponent();
 
-            //Lista.ItemsSource = Service.AppService.GetCategorias();
+            Lista.ItemsSource = Service.AppService.GetCategorias();
         }
 
         private void GoPaginaPerfil01(object sender, EventArgs args)

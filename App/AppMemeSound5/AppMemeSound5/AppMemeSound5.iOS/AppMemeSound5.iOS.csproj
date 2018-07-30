@@ -171,4 +171,37 @@
   <ItemGroup>
     <BundleResource Include="Resources\trolololo.mp3" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\boa_noite_boris.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\a_lelek.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\a_regra_e_clara.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\a_vinganca_nunca_e_plena.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ah_para_o.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ao_infinito_e_alem.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bem_dormido.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\queixo.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nao_gosta.mp3" />
+  </ItemGroup>
 </Project>

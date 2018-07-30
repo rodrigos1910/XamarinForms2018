@@ -17,7 +17,14 @@
                         <ListView x:Name="Lista" ItemSelected="SelecaoCategoriaAction">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
-                                    <TextCell Text="{Binding name}" />
+
+                                    <ViewCell>
+                                        <StackLayout Padding="15, 5, 15, 5" Orientation="Horizontal">
+                                            <Image Source="play.png" />
+                                            <Label Text="{Binding name}" VerticalOptions="Center" FontSize="24" TextColor="#FFFFFF"  />
+                                        </StackLayout>
+
+                                    </ViewCell>
 
                                 </DataTemplate>
                             </ListView.ItemTemplate>

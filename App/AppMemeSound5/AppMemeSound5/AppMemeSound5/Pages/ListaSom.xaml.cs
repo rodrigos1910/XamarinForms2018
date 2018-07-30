@@ -14,20 +14,23 @@ namespace AppMemeSound5.Pages
     public partial class ListaSom : ContentPage
     {
 
+        private List<Data> dados { get; set; }
+        private List<Data> dadosFiltrado { get; set; }
         public ListaSom()
         {
             InitializeComponent();
 
-            Lista.ItemsSource = Service.AppService.GetData("all");
-
+           
+            dados = Service.AppService.GetData("all");
+            Lista.ItemsSource = dados;
 
         }
         public ListaSom(string name)
         {
             InitializeComponent();
 
-            Lista.ItemsSource = Service.AppService.GetData(name);
-
+            dados = Service.AppService.GetData(name);
+            Lista.ItemsSource = dados;
 
         }
         private void SelecaoSomAction(object sender, SelectedItemChangedEventArgs args)
@@ -38,6 +41,11 @@ namespace AppMemeSound5.Pages
             player.Load(dado.archive);
             player.Play();
 
+        }
+        private void BuscaRapida(object sender, TextChangedEventArgs args)
+        {
+            dadosFiltrado =  dados.Where(a => a.name.ToLower().Contains(args.NewTextValue.ToLower())).ToList();
+            Lista.ItemsSource = dadosFiltrado;
         }
 
     }

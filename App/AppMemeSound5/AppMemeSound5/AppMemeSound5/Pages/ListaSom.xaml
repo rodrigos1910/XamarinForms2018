@@ -3,15 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppMemeSound5.Pages.ListaSom">
     <ContentPage.Content>
-        <ListView x:Name="Lista" ItemSelected="SelecaoSomAction">
-            <ListView.ItemTemplate>
+        <StackLayout>
+            <!--<Entry Placeholder="Pesquisar" x:Name="EDT_PESQUISAR" TextChanged="BuscaRapida" ></Entry>-->
+            <SearchBar  Placeholder="Pesquisar" x:Name="EDT_PESQUISAR" TextChanged="BuscaRapida" HeightRequest="50"></SearchBar>
+            <ListView x:Name="Lista" ItemSelected="SelecaoSomAction">
+           
+                <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding name}" />
+                   
+                    <ViewCell>
+                        <StackLayout Padding="15, 5, 15, 5" Orientation="Horizontal">
+                            <Image Source="play.png" />
+                            <Label Text="{Binding name}" VerticalOptions="Center" />
+                        </StackLayout>
 
+                    </ViewCell>
+                   
                 </DataTemplate>
             </ListView.ItemTemplate>
-
+           
 
         </ListView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
